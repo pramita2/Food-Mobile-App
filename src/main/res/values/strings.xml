@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">Foodics</string>
+    <string name="my_text" translatable="false"> <u>Login</u></string>
+    <string name="text" translatable="false"> <u>Register</u></string>
+    <string name="texts" translatable="false"> <u>Popular Dish For Today</u></string>
+    <string name="price" translatable="false">Price :</string>
+    <string name="booked">Booked</string>
+    <string name="order">Order</string>
+    <string name="food">Food Detail</string>
+    <string name="add">Address:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Choose">Choose Item</string>
+    <string name="phone">phone</string>
+    <string name="todo">TODO\n</string>
+    <string name="name">Username</string>
+    <string name="e_mail">Email\n</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="email">Enter Email</string>
+    <string name="Foods">Food Item List</string>
+    <string name="qty">Quantity</string>
+    <string name="Item">Choose Item</string>
+    <string name="Proceed">Proceed</string>
+    <string name="Give">Plz enter Your Current Address</string>
+    <string name="food_name">Food Name</string>
+    <string name="total">Total Price</string>
+    <string name="Order_successful">Order Successful!!</string>
+    <string name="quentity">Quentity\n</string>
+    <string name="cash">Cash On Delivery</string>
+    <string name="Order">Order</string>
+
+    <string-array name="numbers_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <!-- Add more items as needed -->
+    </string-array>
+    <string-array name="item_array">
+        <item>Veg</item>
+        <item>Chicken</item>
+        <item>Buff</item>
+    </string-array>
+</resources>

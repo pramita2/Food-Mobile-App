@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    tools:ignore="ScrollViewCount"
+    tools:context=".Order">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/lightred"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/foodDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/foodDetail"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:layout_below="@+id/about"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_toEndOf="@id/mPrice"
+        android:layout_marginStart="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="@string/qty"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/quantity"
+        android:background="@color/white"
+        android:entries="@array/numbers_array" />
+
+
+    <TextView
+        android:id="@+id/Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-1dp"
+        android:padding="10dp"
+        android:text="@string/Item"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/ItemSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/Spinner"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@id/quantity"
+        android:background="@color/white"
+        android:entries="@array/item_array" />
+
+    <TextView
+        android:id="@+id/maddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Item"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:padding="10dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/add"
+        android:layout_width="264dp"
+        android:layout_height="214dp"
+        android:layout_below="@+id/ItemSpinner"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@id/maddress"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/Give"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Order"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/add"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round"
+        android:text="@string/Proceed"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
+</ScrollView>

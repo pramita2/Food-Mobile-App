@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prof"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/profile"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtName"
+            android:layout_below="@+id/username"
+            android:background="@drawable/edit"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            tools:ignore="Autofill,LabelFor,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e_mail"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtEmail"
+            android:layout_below="@+id/email"
+            android:background="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:textColor="@color/black"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtPhone"
+            android:layout_below="@+id/phone"
+            android:paddingStart="10dp"
+            android:background="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtPhone"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/round"
+            android:text="LogOut"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="29sp" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
